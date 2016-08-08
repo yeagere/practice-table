@@ -1,41 +1,9 @@
 <!DOCTYPE html>
-<!--
-  <table> defines a table
-  <th> defines a header in a table
-  <tr> defines a row in a table
-  <td> defines a cell in a table
-  <caption> defines a table caption
-  <colgroup> defines a group of one or more columns in a table for formatting
-  <col> specifiies column properties for each column within a <colgroup> element
-  <thead> groups the header content in a table
-  <tbody> groups the body content in a table
-  <tfoot> groups the content in a table /t> 
--->
 <html>
 <head>
-<style>
-  table{
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  td, th {
-    border: 1px solid #000000;
-    text-align: left;
-    padding: 8px;
-  }
-
-  tr:nth-child(even) {
-    background-color: #f0f8ff;
-  }
-
-  tr:nth-child(odd) { 
-    background-color: #cce7ff;
-  } 
-</style>
+<link rel="stylesheet" type="text/css" href="table.css">
 </head>
-
+ 
 <body>
 <table>
   <tr>
@@ -50,388 +18,388 @@
     <th>na</th>
     <th>na</th>  
   </tr>
-  <tr>
-    <th>12V</th>
-    <th>12.475</th>
-    <th>Volts</th>   
-    <th>ok</th>
-    <th>9.934</th>
-    <th>7.932</th>
-    <th>5.930</th>
-    <th>13.861</th>   
-    <th>15.863</th>
-    <th>18.866</th>
+  <tr id="error">
+    <td>+12V</td>
+    <td>12.475</td>
+    <td>Volts</td>   
+    <td>ok</td>
+    <td>9.934</td>
+    <td>7.932</td>
+    <td>5.930</td>
+    <td>13.861</td>   
+    <td>15.863</td>
+    <td>18.866</td>
   </tr>
   <tr>
-    <th>+3.3V MMC</th>
-    <th>33.850</th>
-    <th>Volts</th>   
-    <th>ok</th>
-    <th>29.845</th>
-    <th>30.785</th>
-    <th>31.960</th>
-    <th>34.780</th>   
-    <th>35.955</th>
-    <th>36.895</th>
+    <td>+3.3V MMC</td>
+    <td>33.850</td>
+    <td>Volts</td>   
+    <td id="error">ok</td>
+    <td>29.845</td>
+    <td>30.785</td>
+    <td>31.960</td>
+    <td>34.780</td>   
+    <td>35.955</td>
+    <td>36.895</td>
   </tr>
   <tr>
-    <th>+3.3VD</th>
-    <th>33.15</th>
-    <th>Volts</th>   
-    <th>ok</th>
-    <th>29.845</th>
-    <th>30.785</th>
-    <th>31.960</th>
-    <th>34.780</th>   
-    <th>35.955</th>
-    <th>36.895</th>
+    <td>+3.3VD</td>
+    <td>33.15</td>
+    <td id="error">Volts</td>   
+    <td>ok</td>
+    <td id="error">29.845</td>
+    <td>30.785</td>
+    <td>31.960</td>
+    <td>34.780</td>   
+    <td>35.955</td>
+    <td>36.895</td>
   </tr>
   <tr>
-    <th>+1.4VS</th>
-    <th>13.923</th>
-    <th>Volts</th>   
-    <th>ok</th>
-    <th>10.998</th>
-    <th>11.934</th>
-    <th>12.987</th>
-    <th>14.976</th>   
-    <th>15.912</th>
-    <th>16.965</th>
+    <td>+1.4VS</td>
+    <td id="error">13.923</td>
+    <td>Volts</td>   
+    <td>ok</td>
+    <td>10.998</td>
+    <td id="error">11.934</td>
+    <td>12.987</td>
+    <td>14.976</td>   
+    <td>15.912</td>
+    <td>16.965</td>
   </tr>
   <tr>
-    <th>+1.2_CR_INT</th>
-    <th>11.934</th>
-    <th>Volts</th>   
-    <th>ok</th>
-    <th>8.892</th>
-    <th>9.945</th>
-    <th>10.998</th>
-    <th>12.987</th>   
-    <th>13.923</th>
-    <th>14.976</th>
+    <td id="error">+1.2_CR_INT</td>
+    <td>11.934</td>
+    <td>Volts</td>   
+    <td>ok</td>
+    <td>8.892</td>
+    <td>9.945</td>
+    <td id="error">10.998</td>
+    <td>12.987</td>   
+    <td>13.923</td>
+    <td>14.976</td>
+  </tr>
+  <tr id="error">
+    <td>+1.0_CR_INT</td>
+    <td>9.945</td>
+    <td>Volts</td>   
+    <td>ok</td>
+    <td>6.903</td>
+    <td>7.956</td>
+    <td>8.892</td>
+    <td>10.998</td>   
+    <td>11.934</td>
+    <td>12.987</td>
   </tr>
   <tr>
-    <th>+1.0_CR_INT</th>
-    <th>9.945</th>
-    <th>Volts</th>   
-    <th>ok</th>
-    <th>6.903</th>
-    <th>7.956</th>
-    <th>8.892</th>
-    <th>10.998</th>   
-    <th>11.934</th>
-    <th>12.987</th>
+    <td>+1.8_MGTAUX</td>
+    <td>17.784</td>
+    <td>Volts</td>   
+    <td>ok</td>
+    <td>14.976</td>
+    <td>15.912</td>
+    <td>16.965</td>
+    <td>18.954</td>   
+    <td>19.890</td>
+    <td>20.943</td>
+  </tr>
+    <td>+1.8_FLASH</td>
+    <td>17.784</td>
+    <td>Volts</td>   
+    <td>ok</td>
+    <td>14.976</td>
+    <td>15.912</td>
+    <td>16.965</td>
+    <td>18.954</td>   
+    <td>19.890</td>
+    <td>20.943</td>
   </tr>
   <tr>
-    <th>+1.8_MGTAUX</th>
-    <th>17.784</th>
-    <th>Volts</th>   
-    <th>ok</th>
-    <th>14.976</th>
-    <th>15.912</th>
-    <th>16.965</th>
-    <th>18.954</th>   
-    <th>19.890</th>
-    <th>20.943</th>
-  </tr>
-    <th>+1.8_FLASH</th>
-    <th>17.784</th>
-    <th>Volts</th>   
-    <th>ok</th>
-    <th>14.976</th>
-    <th>15.912</th>
-    <th>16.965</th>
-    <th>18.954</th>   
-    <th>19.890</th>
-    <th>20.943</th>
+    <td>+1.2_AVTT_1</td>
+    <td>12.051</td>
+    <td>Volts</td>   
+    <td>ok</td>
+    <td>8.892</td>
+    <td>9.945</td>
+    <td>10.998</td>
+    <td>12.987</td>   
+    <td>13.923</td>
+    <td>14.976</td>
   </tr>
   <tr>
-    <th>+1.2_AVTT_1</th>
-    <th>12.051</th>
-    <th>Volts</th>   
-    <th>ok</th>
-    <th>8.892</th>
-    <th>9.945</th>
-    <th>10.998</th>
-    <th>12.987</th>   
-    <th>13.923</th>
-    <th>14.976</th>
+    <td>+1.2_AVTT_2</td>
+    <td>11.934</td>
+    <td>Volts</td>   
+    <td>ok</td>
+    <td>8.892</td>
+    <td>9.945</td>
+    <td>10.998</td>
+    <td>12.987</td>   
+    <td>13.923</td>
+    <td>14.976</td>
   </tr>
   <tr>
-    <th>+1.2_AVTT_2</th>
-    <th>11.934</th>
-    <th>Volts</th>   
-    <th>ok</th>
-    <th>8.892</th>
-    <th>9.945</th>
-    <th>10.998</th>
-    <th>12.987</th>   
-    <th>13.923</th>
-    <th>14.976</th>
+    <td>+1.2_CN_AVT</td>
+    <td>11.817</td>
+    <td>Volts</td>   
+    <td>ok</td>
+    <td>8.892</td>
+    <td>9.945</td>
+    <td>10.998</td>
+    <td>12.987</td>   
+    <td>13.923</td>
+    <td>14.976</td>
   </tr>
   <tr>
-    <th>+1.2_CN_AVT</th>
-    <th>11.817</th>
-    <th>Volts</th>   
-    <th>ok</th>
-    <th>8.892</th>
-    <th>9.945</th>
-    <th>10.998</th>
-    <th>12.987</th>   
-    <th>13.923</th>
-    <th>14.976</th>
+    <td>+1.2_CR_CN</td>
+    <td>11.817</td>
+    <td>Volts</td>   
+    <td>ok</td>
+    <td>8.892</td>
+    <td>9.945</td>
+    <td>10.998</td>
+    <td>12.987</td>   
+    <td>13.923</td>
+    <td>14.976</td>
   </tr>
   <tr>
-    <th>+1.2_CR_CN</th>
-    <th>11.817</th>
-    <th>Volts</th>   
-    <th>ok</th>
-    <th>8.892</th>
-    <th>9.945</th>
-    <th>10.998</th>
-    <th>12.987</th>   
-    <th>13.923</th>
-    <th>14.976</th>
+    <td>+1.0_CR_A_1</td>
+    <td>10.647</td>
+    <td>Volts</td>   
+    <td>ok</td>
+    <td>6.903</td>
+    <td>7.956</td>
+    <td>8.892</td>
+    <td>10.998</td>   
+    <td>11.934</td>
+    <td>12.978</td>
   </tr>
   <tr>
-    <th>+1.0_CR_A_1</th>
-    <th>10.647</th>
-    <th>Volts</th>   
-    <th>ok</th>
-    <th>6.903</th>
-    <th>7.956</th>
-    <th>8.892</th>
-    <th>10.998</th>   
-    <th>11.934</th>
-    <th>12.978</th>
+    <td>+1.0_CR_A_2</td>
+    <td>10.647</td>
+    <td>Volts</td>   
+    <td>ok</td>
+    <td>6.903</td>
+    <td>7.956</td>
+    <td>8.892</td>
+    <td>10.998</td>   
+    <td>11.934</td>
+    <td>12.978</td>
   </tr>
   <tr>
-    <th>+1.0_CR_A_2</th>
-    <th>10.647</th>
-    <th>Volts</th>   
-    <th>ok</th>
-    <th>6.903</th>
-    <th>7.956</th>
-    <th>8.892</th>
-    <th>10.998</th>   
-    <th>11.934</th>
-    <th>12.978</th>
+    <td>+1.0_CN_INT</td>
+    <td>9.828</td>
+    <td>Volts</td>   
+    <td>ok</td>
+    <td>6.903</td>
+    <td>7.956</td>
+    <td>8.892</td>
+    <td>10.998</td>   
+    <td>11.934</td>
+    <td>12.978</td>
   </tr>
   <tr>
-    <th>+1.0_CN_INT</th>
-    <th>9.828</th>
-    <th>Volts</th>   
-    <th>ok</th>
-    <th>6.903</th>
-    <th>7.956</th>
-    <th>8.892</th>
-    <th>10.998</th>   
-    <th>11.934</th>
-    <th>12.978</th>
+    <td>+1.0_CN_A</td>
+    <td>9.828</td>
+    <td>Volts</td>   
+    <td>ok</td>
+    <td>6.903</td>
+    <td>7.956</td>
+    <td>8.892</td>
+    <td>10.998</td>   
+    <td>11.934</td>
+    <td>12.978</td>
   </tr>
   <tr>
-    <th>+1.0_CN_A</th>
-    <th>9.828</th>
-    <th>Volts</th>   
-    <th>ok</th>
-    <th>6.903</th>
-    <th>7.956</th>
-    <th>8.892</th>
-    <th>10.998</th>   
-    <th>11.934</th>
-    <th>12.978</th>
+    <td>Temp 1</td>
+    <td>25.950</td>
+    <td>degrees C</td>   
+    <td>ok</td>
+    <td>-0.960</td>
+    <td>4.890</td>
+    <td>9.570</td>
+    <td>69.240</td>   
+    <td>73.920</td>
+    <td>84.450</td>
   </tr>
   <tr>
-    <th>Temp 1</th>
-    <th>25.950</th>
-    <th>degrees C</th>   
-    <th>ok</th>
-    <th>-0.960</th>
-    <th>4.890</th>
-    <th>9.570</th>
-    <th>69.240</th>   
-    <th>73.920</th>
-    <th>84.450</th>
+    <td>Temp 2</td>
+    <td>25.950</td>
+    <td>degrees C</td>   
+    <td>ok</td>
+    <td>-0.960</td>
+    <td>4.890</td>
+    <td>9.570</td>
+    <td>69.240</td>   
+    <td>73.920</td>
+    <td>84.450</td>
   </tr>
   <tr>
-    <th>Temp 2</th>
-    <th>25.950</th>
-    <th>degrees C</th>   
-    <th>ok</th>
-    <th>-0.960</th>
-    <th>4.890</th>
-    <th>9.570</th>
-    <th>69.240</th>   
-    <th>73.920</th>
-    <th>84.450</th>
+    <td>+1.0_CR_A0I</td>
+    <td>0.059</td>
+    <td>Amps</td>   
+    <td>ok</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>3.998</td>   
+    <td>4.998</td>
+    <td>5.998</td>
   </tr>
   <tr>
-    <th>+1.0_CR_A0I</th>
-    <th>0.059</th>
-    <th>Amps</th>   
-    <th>ok</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>3.998</th>   
-    <th>4.998</th>
-    <th>5.998</th>
+    <td>+1.0_CR_A1I</td>
+    <td>0.382</td>
+    <td>Amps</td>   
+    <td>ok</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>3.998</td>   
+    <td>4.998</td>
+    <td>5.998</td>
   </tr>
   <tr>
-    <th>+1.0_CR_A1I</th>
-    <th>0.382</th>
-    <th>Amps</th>   
-    <th>ok</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>3.998</th>   
-    <th>4.998</th>
-    <th>5.998</th>
+    <td>+1.0_CR_A2I</td>
+    <td>0.118</td>
+    <td>Amps</td>   
+    <td>ok</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>3.998</td>   
+    <td>4.998</td>
+    <td>5.998</td>
   </tr>
   <tr>
-    <th>+1.0_CR_A2I</th>
-    <th>0.118</th>
-    <th>Amps</th>   
-    <th>ok</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>3.998</th>   
-    <th>4.998</th>
-    <th>5.998</th>
+    <td>+1.0_CR_A31</td>
+    <td>0.559</td>
+    <td>Amps</td>   
+    <td>ok</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>3.998</td>   
+    <td>4.998</td>
+    <td>5.998</td>
   </tr>
   <tr>
-    <th>+1.0_CR_A3I</th>
-    <th>0.559</th>
-    <th>Amps</th>   
-    <th>ok</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>3.998</th>   
-    <th>4.998</th>
-    <th>5.998</th>
+    <td>+1.0_CN_INI</td>
+    <td>0.353</td>
+    <td>Amps</td>   
+    <td>ok</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>3.998</td>   
+    <td>4.998</td>
+    <td>5.998</td>
   </tr>
   <tr>
-    <th>+1.0_CN_INI</th>
-    <th>0.353</th>
-    <th>Amps</th>   
-    <th>ok</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>3.998</th>   
-    <th>4.998</th>
-    <th>5.998</th>
+    <td>+1.0_CN_A_I</td>
+    <td>0.588</td>
+    <td>Amps</td>   
+    <td>ok</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>3.998</td>   
+    <td>4.998</td>
+    <td>5.998</td>
   </tr>
   <tr>
-    <th>+1.0_CN_A_I</th>
-    <th>0.588</th>
-    <th>Amps</th>   
-    <th>ok</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>3.998</th>   
-    <th>4.998</th>
-    <th>5.998</th>
+    <td>+1.2_CR_A0I</td>
+    <td>0.059</td>
+    <td>Amps</td>   
+    <td>ok</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>3.998</td>   
+    <td>4.998</td>
+    <td>5.998</td>
   </tr>
   <tr>
-    <th>+1.2_CR_A0I</th>
-    <th>0.059</th>
-    <th>Amps</th>   
-    <th>ok</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>3.998</th>   
-    <th>4.998</th>
-    <th>5.998</th>
+    <td>+1.2_CR_A1I</td>
+    <td>0.206</td>
+    <td>Amps</td>   
+    <td>ok</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>3.998</td>   
+    <td>4.998</td>
+    <td>5.998</td>
   </tr>
   <tr>
-    <th>+1.2_CR_A1I</th>
-    <th>0.206</th>
-    <th>Amps</th>   
-    <th>ok</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>3.998</th>   
-    <th>4.998</th>
-    <th>5.998</th>
+    <td>+1.2_CR_A2I</td>
+    <td>0.382</td>
+    <td>Amps</td>   
+    <td>ok</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>3.998</td>   
+    <td>4.998</td>
+    <td>5.998</td>
   </tr>
   <tr>
-    <th>+1.2_CR_A2I</th>
-    <th>0.382</th>
-    <th>Amps</th>   
-    <th>ok</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>3.998</th>   
-    <th>4.998</th>
-    <th>5.998</th>
+    <td>+1.2_CR_A3I</td>
+    <td>0.235</td>
+    <td>Amps</td>   
+    <td>ok</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>3.998</td>   
+    <td>4.998</td>
+    <td>5.998</td>
   </tr>
   <tr>
-    <th>+1.2_CR_A3I</th>
-    <th>0.235</th>
-    <th>Amps</th>   
-    <th>ok</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>3.998</th>   
-    <th>4.998</th>
-    <th>5.998</th>
+    <td>+1.2_CN_A_I</th>
+    <td>0.706</td>
+    <td>Amps</td>   
+    <td>ok</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>3.998</td>   
+    <td>4.998</td>
+    <td>5.998</td>
   </tr>
   <tr>
-    <th>+1.2_CN_A_I</th>
-    <th>0.706</th>
-    <th>Amps</th>   
-    <th>ok</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>3.998</th>   
-    <th>4.998</th>
-    <th>5.998</th>
+    <td>+1.2_CRCN_I</td>
+    <td>0.029</td>
+    <td>Amps</td>   
+    <td>ok</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>3.998</td>   
+    <td>4.998</td>
+    <td>5.998</td>
   </tr>
   <tr>
-    <th>+1.2_CRCN_I</th>
-    <th>0.029</th>
-    <th>Amps</th>   
-    <th>ok</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>3.998</th>   
-    <th>4.998</th>
-    <th>5.998</th>
+    <td>+1.8_AUX_I</td>
+    <td>0.559</td>
+    <td>Amps</td>   
+    <td>ok</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>3.998</td>   
+    <td>4.998</td>
+    <td>5.998</td>
   </tr>
   <tr>
-    <th>+1.8_AUX_I</th>
-    <th>0.559</th>
-    <th>Amps</th>   
-    <th>ok</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>3.998</th>   
-    <th>4.998</th>
-    <th>5.998</th>
-  </tr>
-  <tr>
-    <th>+1.8_FLASHI</th>
-    <th>0.559</th>
-    <th>Amps</th>   
-    <th>ok</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>0.000</th>
-    <th>3.998</th>   
-    <th>4.998</th>
-    <th>5.998</th>
+    <td>+1.8_FLASHI</td>
+    <td>0.559</td>
+    <td>Amps</td>   
+    <td>ok</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>0.000</td>
+    <td>3.998</td>   
+    <td>4.998</td>
+    <td>5.998</td>
   </tr>
 </table>
 </body>
